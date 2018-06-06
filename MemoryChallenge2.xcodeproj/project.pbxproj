@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1213382220ABCF4000C48AF8 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213382120ABCF4000C48AF8 /* TableViewController.swift */; };
+		124F9C3E20BE587300076848 /* switch1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 124F9C3D20BE587300076848 /* switch1.mp3 */; };
 		12C9160820A5800A00A04006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9160720A5800A00A04006 /* AppDelegate.swift */; };
 		12C9160A20A5800A00A04006 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9160920A5800A00A04006 /* ViewController.swift */; };
 		12C9160D20A5800A00A04006 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C9160B20A5800A00A04006 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1213382120ABCF4000C48AF8 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		124F9C3D20BE587300076848 /* switch1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = switch1.mp3; sourceTree = "<group>"; };
 		12C9160420A5800A00A04006 /* MemoryChallenge2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryChallenge2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12C9160720A5800A00A04006 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12C9160920A5800A00A04006 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		124F9C3C20BE584E00076848 /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				124F9C3D20BE587300076848 /* switch1.mp3 */,
+			);
+			path = audio;
+			sourceTree = "<group>";
+		};
 		12C915FB20A5800A00A04006 = {
 			isa = PBXGroup;
 			children = (
@@ -101,8 +113,10 @@
 				12C9160920A5800A00A04006 /* ViewController.swift */,
 				12C9160B20A5800A00A04006 /* Main.storyboard */,
 				12C9160E20A5800B00A04006 /* Assets.xcassets */,
+				124F9C3C20BE584E00076848 /* audio */,
 				12C9161020A5800B00A04006 /* LaunchScreen.storyboard */,
 				12C9161320A5800B00A04006 /* Info.plist */,
+				1213382120ABCF4000C48AF8 /* TableViewController.swift */,
 			);
 			path = MemoryChallenge2;
 			sourceTree = "<group>";
@@ -229,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				124F9C3E20BE587300076848 /* switch1.mp3 in Resources */,
 				12C9161220A5800B00A04006 /* LaunchScreen.storyboard in Resources */,
 				12C9160F20A5800B00A04006 /* Assets.xcassets in Resources */,
 				12C9160D20A5800A00A04006 /* Main.storyboard in Resources */,
@@ -257,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12C9160A20A5800A00A04006 /* ViewController.swift in Sources */,
+				1213382220ABCF4000C48AF8 /* TableViewController.swift in Sources */,
 				12C9160820A5800A00A04006 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

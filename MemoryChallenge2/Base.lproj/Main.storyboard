@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Ku-YM-mHE">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,328 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MemoryChallenge2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MuS-mg-CQM">
+                                <rect key="frame" x="289" y="700" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="再玩一次"/>
+                                <connections>
+                                    <action selector="reStartGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fve-ts-5m4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ts-yN-IU0">
+                                <rect key="frame" x="172" y="700" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="開始"/>
+                                <connections>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vXN-4u-e1D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ic-OW-cGT">
+                                <rect key="frame" x="25" y="106" width="68" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Card1"/>
+                                <connections>
+                                    <action selector="selectCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o6K-6q-UFW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvV-vQ-XFR">
+                                <rect key="frame" x="110" y="106" width="68" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Card2"/>
+                                <connections>
+                                    <action selector="selectCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vI2-3c-0lh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imG-b4-7Ol">
+                                <rect key="frame" x="195" y="106" width="68" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Card3"/>
+                                <connections>
+                                    <action selector="selectCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uj6-yV-LjF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ll7-tF-Kcs">
+                                <rect key="frame" x="280" y="106" width="68" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Card4"/>
+                                <connections>
+                                    <action selector="selectCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jhL-4F-YDX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bga-Qy-Rg5">
+                                <rect key="frame" x="25" y="196" width="68" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Card5"/>
+                                <connections>
+                                    <action selector="selectCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8o5-8T-I7h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aa-KO-qpg">
+                                <rect key="frame" x="110" y="196" width="68" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Card6"/>
+                                <connections>
+                                    <action selector="selectCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8u7-5X-tX5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txO-5J-9Us">
+                                <rect key="frame" x="195" y="196" width="68" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Card7"/>
+                                <connections>
+                                    <action selector="selectCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7G0-1U-qgq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voV-7D-AeO">
+                                <rect key="frame" x="280" y="196" width="68" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Card8"/>
+                                <connections>
+                                    <action selector="selectCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lOR-1P-GhF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFg-mp-gpq">
+                                <rect key="frame" x="25" y="286" width="68" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Card9"/>
+                                <connections>
+                                    <action selector="selectCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NFT-Gj-feJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zP1-8g-Vbj">
+                                <rect key="frame" x="110" y="286" width="68" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Card10"/>
+                                <connections>
+                                    <action selector="selectCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gkS-XE-fNR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0I-bM-OcH">
+                                <rect key="frame" x="195" y="286" width="68" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Card11"/>
+                                <connections>
+                                    <action selector="selectCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BYS-b0-lBG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3E-DV-AZn">
+                                <rect key="frame" x="280" y="286" width="68" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Card12"/>
+                                <connections>
+                                    <action selector="selectCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MQm-0v-y8r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3R-JF-wuQ">
+                                <rect key="frame" x="25" y="376" width="68" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Card13"/>
+                                <connections>
+                                    <action selector="selectCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4eE-eG-ZKo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDF-G2-Ewd">
+                                <rect key="frame" x="110" y="376" width="68" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Card14"/>
+                                <connections>
+                                    <action selector="selectCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Szv-fx-Gds"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWE-Wf-0X1">
+                                <rect key="frame" x="195" y="376" width="68" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Card15"/>
+                                <connections>
+                                    <action selector="selectCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8gl-eG-CCC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2r-mG-BfQ">
+                                <rect key="frame" x="280" y="376" width="68" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Card16"/>
+                                <connections>
+                                    <action selector="selectCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KXg-gm-lg1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coo-Rj-Kea">
+                                <rect key="frame" x="25" y="466" width="68" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Card17"/>
+                                <connections>
+                                    <action selector="selectCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nxS-s0-tiB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyF-Om-OpT">
+                                <rect key="frame" x="110" y="466" width="68" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Card18"/>
+                                <connections>
+                                    <action selector="selectCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AHD-u7-MWA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zu-al-BdY">
+                                <rect key="frame" x="195" y="466" width="68" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Card19"/>
+                                <connections>
+                                    <action selector="selectCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q48-LF-pQK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aU-gY-3Ib">
+                                <rect key="frame" x="280" y="466" width="68" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Card20"/>
+                                <connections>
+                                    <action selector="selectCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2f6-6L-A07"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4T-rH-4it">
+                                <rect key="frame" x="25" y="556" width="68" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Card21"/>
+                                <connections>
+                                    <action selector="selectCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wzV-uH-ZLb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCm-BX-BS8">
+                                <rect key="frame" x="110" y="556" width="68" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Card22"/>
+                                <connections>
+                                    <action selector="selectCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xJg-bN-tWZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gK4-o6-4PK">
+                                <rect key="frame" x="195" y="556" width="68" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Card23"/>
+                                <connections>
+                                    <action selector="selectCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hd2-so-RjQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOI-SC-Mcv">
+                                <rect key="frame" x="280" y="556" width="68" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Card24"/>
+                                <connections>
+                                    <action selector="selectCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wsn-vy-Miu"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aMZ-UO-aP9">
+                                <rect key="frame" x="16" y="700" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fe3-hP-iMp">
+                                <rect key="frame" x="234" y="642" width="114" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="Score" destination="aMZ-UO-aP9" id="pp3-WY-gOp"/>
+                        <outlet property="card1" destination="2ic-OW-cGT" id="c0Y-15-Ci2"/>
+                        <outlet property="card10" destination="zP1-8g-Vbj" id="bDN-rb-CJx"/>
+                        <outlet property="card11" destination="j0I-bM-OcH" id="3aN-oc-sWt"/>
+                        <outlet property="card12" destination="g3E-DV-AZn" id="tzg-P3-c9n"/>
+                        <outlet property="card13" destination="l3R-JF-wuQ" id="wij-NZ-ppU"/>
+                        <outlet property="card14" destination="yDF-G2-Ewd" id="afz-zb-1zs"/>
+                        <outlet property="card15" destination="HWE-Wf-0X1" id="ThU-3T-87b"/>
+                        <outlet property="card16" destination="h2r-mG-BfQ" id="3tP-wE-aKS"/>
+                        <outlet property="card17" destination="coo-Rj-Kea" id="HXl-hd-XMy"/>
+                        <outlet property="card18" destination="uyF-Om-OpT" id="Rqf-MB-pG1"/>
+                        <outlet property="card19" destination="7zu-al-BdY" id="NVI-lT-oib"/>
+                        <outlet property="card2" destination="rvV-vQ-XFR" id="bco-dT-FMf"/>
+                        <outlet property="card20" destination="5aU-gY-3Ib" id="kUx-9J-JDq"/>
+                        <outlet property="card21" destination="h4T-rH-4it" id="Q6H-L3-GWh"/>
+                        <outlet property="card22" destination="CCm-BX-BS8" id="Hf9-Oc-BTv"/>
+                        <outlet property="card23" destination="gK4-o6-4PK" id="Y0o-XF-MgQ"/>
+                        <outlet property="card24" destination="sOI-SC-Mcv" id="Xwe-pm-Jyl"/>
+                        <outlet property="card3" destination="imG-b4-7Ol" id="lhi-GY-Op0"/>
+                        <outlet property="card4" destination="ll7-tF-Kcs" id="85W-ig-mC5"/>
+                        <outlet property="card5" destination="bga-Qy-Rg5" id="TB9-Fn-m5h"/>
+                        <outlet property="card6" destination="8aa-KO-qpg" id="AKI-VM-94Q"/>
+                        <outlet property="card7" destination="txO-5J-9Us" id="EUS-QS-3I7"/>
+                        <outlet property="card8" destination="voV-7D-AeO" id="GIw-cR-kRl"/>
+                        <outlet property="card9" destination="lFg-mp-gpq" id="qhl-YY-Vue"/>
+                        <outlet property="combo" destination="Fe3-hP-iMp" id="DyB-hP-FgQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="3245.5999999999999" y="12.561576354679804"/>
+        </scene>
+        <!--選擇你喜翻的圖案-->
+        <scene sceneID="f9U-fi-Lx8">
+            <objects>
+                <tableViewController id="tNj-Oo-ATV" customClass="TableViewController" customModule="MemoryChallenge2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="v2X-5h-tHQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="uxL-8S-7xY" style="IBUITableViewCellStyleDefault" id="hhg-h7-3Ey">
+                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hhg-h7-3Ey" id="udC-QY-xP4">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.666666666666671"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uxL-8S-7xY">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="79.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="chooseImage" id="xpz-kw-UOE"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="tNj-Oo-ATV" id="bam-ht-svs"/>
+                            <outlet property="delegate" destination="tNj-Oo-ATV" id="tjb-F3-oOl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="選擇你喜翻的圖案" id="S5n-ri-MA2"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZy-YK-6fz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2263.1999999999998" y="13.300492610837439"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="d5F-hC-3Ki">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Ku-YM-mHE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tdK-TC-BXf">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tNj-Oo-ATV" kind="relationship" relationship="rootViewController" id="8Mr-or-CCr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zet-Ha-WUY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1320.8" y="13.300492610837439"/>
         </scene>
     </scenes>
 </document>
